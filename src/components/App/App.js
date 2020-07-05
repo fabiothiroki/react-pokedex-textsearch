@@ -25,6 +25,7 @@ export const App = () => {
       <h1>PokeDex</h1>
       <div id="poke_container" class="poke-container">
         {loading && <span>loading...</span>}
+        {errorMessage && <span>errorMessage...</span>}
 
         {pokemons &&
           pokemons.map((pokemon, index) => (

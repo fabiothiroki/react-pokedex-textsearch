@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { BASE_URL } from "../../api/api";
 
 export const Pokemon = ({ pokemon }) => {
