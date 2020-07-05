@@ -1,4 +1,6 @@
-const API_URL = `https://spring-pokedex-textsearch.herokuapp.com/pokemon/?search=`;
+export const BASE_URL = "https://spring-pokedex-textsearch.herokuapp.com/";
 
 export const fetchPokemons = (search = "growing") =>
-  fetch(`${API_URL}&search=${search}`).then((response) => response.json());
+  fetch(`${BASE_URL}pokemon/?search=${search}`).then((response) =>
+    response.json()
+  );
