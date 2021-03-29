@@ -1,5 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { BASE_URL } from "../../api/api";
+
 
 export const Pokemon = ({ pokemon }) => {
   return (
@@ -17,4 +19,10 @@ export const Pokemon = ({ pokemon }) => {
       </div>
     </div>
   );
+};
+
+Pokemon.propTypes = {
+  name: PropTypes.string.isRequired,
+  type1: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
