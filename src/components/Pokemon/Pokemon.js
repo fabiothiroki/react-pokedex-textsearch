@@ -22,7 +22,9 @@ export const Pokemon = ({ pokemon }) => {
 };
 
 Pokemon.propTypes = {
-  name: PropTypes.string.isRequired,
-  type1: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  pokemon: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    type1: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }),
 };
